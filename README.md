@@ -29,5 +29,11 @@ it is a web api project with swagger integration
    each will be responsible for there logic implementation
 
    Utilities has ConnectionHelper.cs file it will carry the redis connection
+
+   Added Nugets :
+       1. Microsoft.Extensions.Caching.StackExchangeRedis
+       2. Microsoft.OpenApi
+       3. MongoDB.Driver
+       4. Swashbuckle.AspNetCore
    
    
