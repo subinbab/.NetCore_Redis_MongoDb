@@ -11,7 +11,24 @@ namespace ReddisSample1.Services
 
         public MongoDBService(IOptions<MongoDBSettings> mongoDBSettings)
         {
-            MongoClient client = new MongoClient(mongoDBSettings.Value.ConnectionURI);
+            // Retrieve the MongoDB connection string from environment variables
+            string mongoConnectionString = Environment.GetEnvironmentVariable("MONGODB", EnvironmentVariableTarget.Process);
+
+            if (string.IsNullOrWhiteSpace(mongoConnectionString))
+            {
+                Console.WriteLine("MongoDB connection string is null or empty. Please check your environment variables.");
+                return;
+            }
+            else
+            {
+                Console.WriteLine(mongoConnectionString);
+            }
+
+            // Use the connection string to create a MongoClient
+            MongoClient client = new MongoClient(mongoConnectionString);
+
+            // Now you can use 'client' in your MongoDB-related code
+            // For example: var database = client.GetDatabase("your-database-name");
             IMongoDatabase database = client.GetDatabase(mongoDBSettings.Value.DatabaseName);
             _playlistCollection = database.GetCollection<Playlist>(mongoDBSettings.Value.CollectionName);
         }

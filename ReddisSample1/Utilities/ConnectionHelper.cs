@@ -9,7 +9,7 @@ namespace ReddisSample1.Utilities
          public ConnectionHelper(IOptions<ReddisDbSettings> reddisDbSettings)
         {
             ConnectionHelper.lazyConnection = new Lazy<ConnectionMultiplexer>(() => {
-                return ConnectionMultiplexer.Connect(reddisDbSettings.Value.Configuration);
+                return ConnectionMultiplexer.Connect(Environment.GetEnvironmentVariable("RedisConnection", EnvironmentVariableTarget.Process));
             });
         }
         private static Lazy<ConnectionMultiplexer> lazyConnection;

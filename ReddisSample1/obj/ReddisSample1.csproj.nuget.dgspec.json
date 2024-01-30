@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\MyProjects\\ReddisCache\\Project1\\ReddisSample1\\ReddisSample1\\ReddisSample1.csproj": {}
+    "C:\\MyProjects\\ReddisCache\\Project1\\.NetCore_Redis_MongoDb\\ReddisSample1\\ReddisSample1.csproj": {}
   },
   "projects": {
-    "C:\\MyProjects\\ReddisCache\\Project1\\ReddisSample1\\ReddisSample1\\ReddisSample1.csproj": {
+    "C:\\MyProjects\\ReddisCache\\Project1\\.NetCore_Redis_MongoDb\\ReddisSample1\\ReddisSample1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\MyProjects\\ReddisCache\\Project1\\ReddisSample1\\ReddisSample1\\ReddisSample1.csproj",
+        "projectUniqueName": "C:\\MyProjects\\ReddisCache\\Project1\\.NetCore_Redis_MongoDb\\ReddisSample1\\ReddisSample1.csproj",
         "projectName": "ReddisSample1",
-        "projectPath": "C:\\MyProjects\\ReddisCache\\Project1\\ReddisSample1\\ReddisSample1\\ReddisSample1.csproj",
+        "projectPath": "C:\\MyProjects\\ReddisCache\\Project1\\.NetCore_Redis_MongoDb\\ReddisSample1\\ReddisSample1.csproj",
         "packagesPath": "C:\\Users\\subabu\\.nuget\\packages\\",
-        "outputPath": "C:\\MyProjects\\ReddisCache\\Project1\\ReddisSample1\\ReddisSample1\\obj\\",
+        "outputPath": "C:\\MyProjects\\ReddisCache\\Project1\\.NetCore_Redis_MongoDb\\ReddisSample1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\subabu\\AppData\\Roaming\\NuGet\\NuGet.Config",

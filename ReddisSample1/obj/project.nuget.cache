@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/nEQjgZdppbko+J9jzrc2x2Ft39+swmbVkM5HhnXGULiS6uuz8xvoZW1RxwrWAlG+Qflm+9Tx3n+LM/rAcny6w==",
+  "dgSpecHash": "KQ4DXFRtLg8PErZCv8PuaOegTbbL2pM3hkuYMv9CIKSJg/n3cmdaK62xReSPqK5PwZx6i2sDUjQxm3AyegKq5w==",
   "success": true,
-  "projectFilePath": "C:\\MyProjects\\ReddisCache\\Project1\\ReddisSample1\\ReddisSample1\\ReddisSample1.csproj",
+  "projectFilePath": "C:\\MyProjects\\ReddisCache\\Project1\\.NetCore_Redis_MongoDb\\ReddisSample1\\ReddisSample1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\subabu\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\subabu\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",

@@ -15,8 +15,8 @@ builder.Services.AddSingleton<ICacheService, CacheService>();
 builder.Services.Configure<MongoDBSettings>(builder.Configuration.GetSection("MongoDB"));
 builder.Services.Configure<ReddisDbSettings>(builder.Configuration.GetSection("ReddisConnection"));
 builder.Services.AddSingleton<MongoDBService>();
-
-builder.Services.AddStackExchangeRedisCache(options => { options.Configuration = "127.0.0.1:6379";
+builder.Services.AddSingleton<UpdateRedisCache>();
+builder.Services.AddStackExchangeRedisCache(options => { options.Configuration = "localhost:6379";
 
     options.InstanceName = "ReddisDemo";
 });
@@ -24,12 +24,11 @@ builder.Services.AddStackExchangeRedisCache(options => { options.Configuration =
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
+//if (app.Environment.IsDevelopment())
+//{
     app.UseSwagger();
     app.UseSwaggerUI();
-}
-
+//}
 app.UseHttpsRedirection();
 
 app.UseAuthorization();

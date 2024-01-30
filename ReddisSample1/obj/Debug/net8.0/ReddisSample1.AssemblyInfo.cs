@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ReddisSample1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5330e1926e5ebe4a28c3b5af2f7a43d2cc279a02")]
 [assembly: System.Reflection.AssemblyProductAttribute("ReddisSample1")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ReddisSample1")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

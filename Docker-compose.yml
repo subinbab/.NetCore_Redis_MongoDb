@@ -1,0 +1,27 @@
+version: "3.8"
+
+services:
+  basketdb:
+    image: redis
+    ports:
+      - "6379:6379"
+
+  basket.api:
+    image: ${DOCKER_REGISTRY-}redisdemo-api
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - "80:8080"
+      - "443:8081"
+    depends_on:
+      - basketdb
+      - db
+    environment:
+      - RedisConnection=basketdb
+      - MONGODB=mongodb://db:27017/
+
+  db:
+    image: mongo
+    ports:
+      - "27017:27017"
